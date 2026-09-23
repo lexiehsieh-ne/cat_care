@@ -55,10 +55,6 @@ export async function POST(request: NextRequest, ctx: RouteContext<"/api/cats/[i
 
     return Response.json(updated, { status: 201 });
   } catch (err) {
-    console.error("上傳大頭照失敗", err);
-    // 暫時把錯誤訊息一起回傳，方便從瀏覽器 Network 分頁直接看到根本原因；
-    // 查完問題後應該把這行改回 return handleError(err);
-    if (err instanceof Error) return jsonError(500, "伺服器錯誤", { detail: err.message });
     return handleError(err);
   }
 }
