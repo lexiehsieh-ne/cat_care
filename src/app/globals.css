@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f5e8d0;
+  --foreground: #4a2f1f;
+  --card: #fffaf0;
+  --blush: #c17a52;
+  --blush-soft: #f0dcc4;
+  --sage: #8a5a3b;
+  --sage-soft: #e8d9c2;
+  --gold: #c8933f;
+  --gold-soft: #f2dfb8;
+  --line: #e6d3b3;
+  /* 朱紅印泥色：印章、禁止事項用 */
+  --seal: #b23a2b;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-blush: var(--blush);
+  --color-blush-soft: var(--blush-soft);
+  --color-sage: var(--sage);
+  --color-sage-soft: var(--sage-soft);
+  --color-gold: var(--gold);
+  --color-gold-soft: var(--gold-soft);
+  --color-line: var(--line);
+  --color-seal: var(--seal);
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
+  --font-script: var(--font-script);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body), sans-serif;
+}
+
